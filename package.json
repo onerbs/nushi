@@ -1,7 +1,7 @@
 {
   "name": "@onerbs/nushi",
   "version": "1.0.0",
-  "description": "A delightful classless style sheet",
+  "description": "A delightful, classless stylesheet",
   "author": "Alejandro Elí",
   "license": "MIT",
   "scripts": {
