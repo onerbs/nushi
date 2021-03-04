@@ -1,0 +1,26 @@
+{
+  "name": "@onerbs/nushi",
+  "version": "1.0.0",
+  "description": "A delightful classless style sheet",
+  "author": "Alejandro Elí",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "csso": "^4.2.0",
+    "sass": "^1.32.8"
+  },
+  "homepage": "https://github.com/onerbs/nushi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onerbs/nushi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/onerbs/nushi/issues"
+  },
+  "keywords": [
+    "classless",
+    "scss"
+  ]
+}
