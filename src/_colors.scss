@@ -1,0 +1,42 @@
+//
+// Color Palette
+//
+
+:root {
+  --color-fore: #252525;
+  --color-back: #fff;
+  --color-back-line: #e5e5e5;
+
+  --color-link-light: #6C7EC6;
+  --color-link:       #5758BB;
+  --color-link-dark:  #5D4BA5;
+  --color-link-fore:  #fff;
+
+  --color-meta-light: #27CBAD;
+  --color-meta:       #09c0c0;
+  --color-meta-dark:  #0588AB;
+  --color-meta-fore:  #111;
+
+  --color-done: #A3CB38;
+  --color-info: #F79F1F;
+  --color-warn: #EE5A24;
+  --color-fail: #EA2027;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fore: #ddd;
+    --color-back: #000;
+    --color-back-line: #111;
+
+    --color-link-light: #7E9DCF;
+    --color-link:       #6C7EC6;
+    --color-link-dark:  #5E5DAF;
+    --color-link-fore:  #000;
+
+    --color-meta-light: #F4A261;
+    --color-meta:       #F89674;
+    --color-meta-dark:  #FB9088;
+    --color-meta-fore:  #000;
+  }
+}

@@ -1,0 +1,29 @@
+//
+// Rounded corners
+//
+
+:root {
+	--radii: 5pt;
+	--radii-small: 2pt;
+}
+
+kbd {
+  border-radius: var(--radii-small);
+}
+
+code,
+pre,
+button,
+input,
+textarea,
+select,
+details,
+fieldset,
+img {
+  border-radius: var(--radii);
+}
+
+blockquote {
+  border-top-right-radius: var(--radii);
+  border-bottom-right-radius: var(--radii);
+}
