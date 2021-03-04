@@ -1,0 +1,2 @@
+dist/* -linguist-detect
+styles/_fonts.scss -linguist-detect
