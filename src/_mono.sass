@@ -1,0 +1,27 @@
+//
+// Monospace
+//
+
+@use 'color'
+
+code,
+kbd,
+pre
+  font-family: monospace
+
+pre,
+code
+  background-color: var(--color-back-line)
+  padding: 1rem 1.4rem
+  border: none
+
+pre
+  white-space: pre-wrap
+
+kbd
+  @include color.inverted
+  font-weight: bold
+  padding: 2pt 1pt
+  color: #000
+  background-color: #eee
+  box-shadow: 0 4pt #aaa

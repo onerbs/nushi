@@ -1,0 +1,25 @@
+//
+// Links
+//
+
+@use 'util'
+
+a
+  @include util.transit(color)
+  background-color: transparent
+  color: var(--color-link)
+  cursor: pointer
+  display: inline-block
+  text-decoration: none
+
+  &:hover
+    color: var(--color-link-light)
+    text-decoration: underline
+
+  &:active
+    background-color: var(--color-link-dark)
+    color: var(--color-link-fore)
+    text-decoration: none
+
+  &:visited
+    color: var(--color-link-dark)

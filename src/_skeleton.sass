@@ -1,0 +1,37 @@
+//
+// Skeleton
+//
+
+@use 'color'
+
+*,
+:after,
+:before
+  box-sizing: border-box
+  line-height: inherit
+  font-size: inherit
+
+html
+  color: var(--color-fore)
+  background-color: var(--color-back)
+  font-family: Inter, sans-serif
+  font-size: 16pt
+  font-weight: 350
+  line-height: 1.25
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  height: 100vh
+  overflow: overlay
+
+mark
+  @include color.meta-back
+
+::selection
+  @include color.inverted
+
+:focus
+  outline-offset: 2px
+  outline: 2px solid var(--color-meta)
+  -moz-outline-radius: var(--radii)

@@ -1,0 +1,44 @@
+//
+// Forms
+//
+
+@use 'util'
+
+form
+  @include util.flex-col
+  margin: auto
+  min-width: 320px
+
+  h1
+    text-align: center
+
+  label
+    font-size: 75%
+    margin-bottom: 1rem
+    min-width: 320px
+    // &:has(> [disabled])
+    //   opacity: 0.6
+    //   user-select: none
+
+    input[type=checkbox]
+      margin: 0 0.25rem 0 0
+
+    input:not([type=checkbox])
+      color: var(--color-fore)
+      background-color: var(--color-back-line)
+      display: block
+      margin: 0.25rem 0 0 0
+      width: 100%
+
+input,
+textarea
+  border: 0
+  padding: 0.5rem
+  user-select: text
+
+textarea
+  font-family: inherit
+
+[disabled]
+  opacity: 0.6
+  user-select: none

@@ -1,0 +1,24 @@
+//
+// Utilities
+//
+
+$_duration: 250ms
+
+@mixin transit($property)
+  transition: #{$property} $_duration
+
+@mixin flex-col
+  display: flex
+  flex-direction: column
+
+@mixin vcenter
+  display: flex
+  align-items: center
+
+@mixin middle
+  @include vcenter
+  justify-content: center
+
+@mixin spread
+  @include vcenter
+  justify-content: space-between
