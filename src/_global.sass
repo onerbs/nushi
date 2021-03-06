@@ -8,8 +8,7 @@
 :after,
 :before
   box-sizing: border-box
-  line-height: inherit
-  font-size: inherit
+  line-height: 1.25
 
 html
   color: var(--color-fore)
@@ -34,4 +33,4 @@ mark
 :focus
   outline-offset: 2px
   outline: 2px solid var(--color-meta)
-  -moz-outline-radius: var(--radii)
+  -moz-outline-radius: calc(2px + var(--radii))
