@@ -13,10 +13,18 @@ Clone this repository
 
 Link it as local dependency
 
+	# With Yarn
+
 	cd nushi
-	npm link
+	yarn link
+
 	cd /into/your/project
-	npm link @onerbs/nushi
+	yarn link @onerbs/nushi
+
+	# With NPM
+
+	cd /into/your/project
+	npm link /path/to/nushi
 
 So you can `git pull` whenever this repository gets updated
 
