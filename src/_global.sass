@@ -8,16 +8,16 @@
 :after,
 :before
   box-sizing: border-box
-  line-height: 1.25
 
 html
   color: var(--color-fore)
   background-color: var(--color-back)
-  font-family: Inter, sans-serif
-  font-size: 16pt
+  font: 14pt/1.15 Inter, sans-serif
   font-weight: 350
-  line-height: 1.25
   scroll-behavior: smooth
+
+  @media (min-width: 768px)
+    font: 16pt/1.25 Inter, sans-serif
 
 body
   margin: 0
