@@ -3,10 +3,12 @@ import sass from 'sass'
 import csso from 'csso'
 import fs from 'fs'
 
+const args = process.argv.slice(2)
 const file = path.join('src', 'nushi.sass')
 const outFile = path.join('dist', 'nushi.min.css')
 
-const res = sass.renderSync({ file, outFile, sourceMap: true })
+const sourceMap = !args.includes('--no-source-map')
+const res = sass.renderSync({ file, outFile, sourceMap })
 const css = csso.minify(res.css, { restructure: false }).css
 const map = (it => {
   const cwd = process.cwd()
@@ -18,5 +20,6 @@ const map = (it => {
 if (!fs.existsSync('dist')) fs.mkdirSync('dist')
 
 const cfg = { encoding: 'utf-8' }
-fs.writeFileSync(outFile, css, cfg)
-fs.writeFileSync(`${outFile}.map`, map, cfg)
+
+               fs.writeFileSync(outFile, css, cfg)
+if (sourceMap) fs.writeFileSync(`${outFile}.map`, map, cfg)
