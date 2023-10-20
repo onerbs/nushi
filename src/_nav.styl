@@ -1,34 +1,32 @@
-//
-// Navigation bar
-//
-
-@use 'util'
+@require '_util'
 
 nav
-  @include util.noselect
-  @include util.middle
+  noselect()
+  middle()
   flex-wrap: wrap
   gap: 2rem
-  padding: 1.5rem
+  padding: 1.5rem 0
 
-  > *
+  & > *
     margin: 0
+    line-height: 1
 
-  > ul, ol
+  & > ul, ol
     display: flex
     flex-wrap: wrap
     gap: 1.5rem
     padding: 0
 
-    > li > a.active
+    & > li > a.active
       color: var(--color-fore)
       background-color: initial
       cursor: default
       font-weight: bolder
       outline: none
 
-    > *
+    & > *
       list-style: none
 
   @media (min-width: 768px)
     justify-content: space-between
+    padding: 1.5rem

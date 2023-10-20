@@ -1,21 +1,16 @@
-//
-// Buttons
-//
-
-@use 'util'
+@require '_util'
 
 button,
 [type=button],
 [type=reset],
 [type=submit]
-  @include util.transit(background-color)
+  noselect()
+  transit(background-color)
   color: var(--color-link-fore)
   background-color: var(--color-link)
-  border: none
   cursor: pointer
   font-size: 90%
   font-weight: 700
-  padding: 6pt 12pt
   -webkit-appearance: none
 
   &:hover

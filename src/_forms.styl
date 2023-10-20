@@ -1,25 +1,22 @@
-//
-// Forms
-//
-
-@use 'util'
+@require '_util'
 
 form
-  @include util.flex-col
+  flex-col()
   margin: auto
   min-width: 320px
 
   h1
-    @include util.noselect
+    noselect()
     text-align: center
 
   label
+    noselect()
     font-size: 75%
     margin-bottom: 1rem
     min-width: 320px
-    // &:has(> [disabled])
-    //   opacity: 0.6
-    //   user-select: none
+    &:has(> [disabled])
+      opacity: 0.6
+      user-select: none
 
     input[type=checkbox]
       margin: 0 0.25rem 0 0
@@ -32,9 +29,11 @@ form
       margin: 0.25rem 0 0 0
       width: 100%
 
+button,
 input,
 textarea
   border: 0
+  border-radius: var(--radii)
   padding: 0.5rem
   user-select: text
 

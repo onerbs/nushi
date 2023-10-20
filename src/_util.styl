@@ -1,0 +1,23 @@
+$time = 250ms
+
+transit(prop)
+  transition: prop $time
+
+flex-col()
+  display: flex
+  flex-direction: column
+
+vcenter()
+  display: flex
+  align-items: center
+
+middle()
+  vcenter()
+  justify-content: center
+
+spread()
+  vcenter()
+  justify-content: space-between
+
+noselect()
+  user-select: none

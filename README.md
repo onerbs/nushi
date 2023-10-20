@@ -1,48 +1,26 @@
-# NUSHIヌシ
+# NUSHI ヌシ
 
-A delightful, classless stylesheet:sparkles:
+A delightful, classless stylesheet :wavy_dash:
 
+## Installation
+
+Adding this to your project is easy:
+
+    npm install github:onerbs/nushi
 
 ## Usage
 
-> This is still a work in progress
+You can grab the minified file from the `dist` folder:
 
-Clone this repository
+    <link href="dist/nushi.min.css" />
 
-	git clone https://github.com/onerbs/nushi
+Or import it on the main file of a React app:
 
-Link it as local dependency
-
-	# With Yarn
-
-	cd nushi
-	yarn link
-
-	cd /into/your/project
-	yarn link @onerbs/nushi
-
-	# With NPM
-
-	cd /into/your/project
-	npm link /path/to/nushi
-
-So you can `git pull` whenever this repository gets updated
-
-
-## Building
-
-If you want a minified CSS file, run
-
-	node build.mjs
-
-This will create the file `nushi.min.css` in the `dist` folder
-
+    import '@onerbs/nushi';
 
 ## Acknowledgments
 
-This project was mainly inspired by [Basic.css](https://github.com/vladocar/Basic.css) :raised_hands:
+This project was mainly inspired by [Basic.css][1], and also by [many other stylesheets][2] with similar goals.
 
-Also, many thanks to:
-
-- The [Inter font](https://github.com/rsms/inter)
-- The [other classless stylesheets](https://github.com/dbohdan/classless-css)
+[1]: https://github.com/vladocar/Basic.css
+[2]: https://github.com/dbohdan/classless-css

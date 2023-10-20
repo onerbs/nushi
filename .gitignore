@@ -1,6 +1,5 @@
-.idea
-.vscode
-.DS_Store
-node_modules
-dist
-not
+node_modules/
+dist/
+not/
+
+*lock*

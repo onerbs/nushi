@@ -1,8 +1,4 @@
-//
-// Monospace
-//
-
-@use 'color'
+@require '_color'
 
 code,
 kbd,
@@ -19,9 +15,7 @@ pre
   white-space: pre-wrap
 
 kbd
-  @include color.inverted
+  inverted()
   font-weight: bold
   padding: 2pt 1pt
-  color: #000
-  background-color: #eee
   box-shadow: 0 4pt #aaa

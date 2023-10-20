@@ -1,14 +1,9 @@
-//
-// Skeleton
-//
-
-@use 'color'
+@require '_color'
 
 *,
 :after,
 :before
   box-sizing: border-box
-  transition: background-color 200ms, color 200ms
 
 html
   color: var(--color-fore)
@@ -16,6 +11,7 @@ html
   font: 14pt/1.15 Inter, sans-serif
   font-weight: 350
   scroll-behavior: smooth
+  transition: background-color 200ms, color 200ms
 
   @media (min-width: 768px)
     font: 16pt/1.25 Inter, sans-serif
@@ -26,10 +22,10 @@ body
   overflow: overlay
 
 mark
-  @include color.meta-back
+  meta-back()
 
 ::selection
-  @include color.inverted
+  inverted()
 
 :focus
   outline-offset: 2px
@@ -37,7 +33,7 @@ mark
   -moz-outline-radius: calc(2px + var(--radii))
 
 [disabled]
-    cursor: default
-    opacity: 0.6
-    pointer-events: none
-    user-select: none
+  cursor: default
+  opacity: 0.6
+  pointer-events: none
+  user-select: none
