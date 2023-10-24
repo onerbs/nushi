@@ -1,12 +1,25 @@
-@require '_util'
-
 a
-  color: var(--color-link-dark)
-  background-color: transparent
-  cursor: pointer
-  display: inline-block
-  text-decoration: none
+  color var(--color-link-dark)
+  background-color transparent
+  cursor pointer
 
   &:hover
-    color: var(--color-link-fore)
-    background-color: var(--color-link)
+    color var(--color-link-fore)
+    background-color var(--color-link)
+
+nav
+  a
+    display inline-block
+    font-weight 900
+    text-decoration none
+
+    &.active
+      cursor default
+      color var(--color-fore)
+      font-weight 300
+      outline none
+      opacity 0.8
+
+      &:hover
+        color var(--color-fore)
+        background-color transparent

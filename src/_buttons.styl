@@ -1,20 +1,20 @@
 @require '_util'
 
 button,
-[type=button],
-[type=reset],
-[type=submit]
+input[type=button],
+input[type=reset],
+input[type=submit]
   noselect()
   transit(background-color)
-  color: var(--color-link-fore)
-  background-color: var(--color-link)
-  cursor: pointer
-  font-size: 90%
-  font-weight: 700
-  -webkit-appearance: none
+  color var(--color-link-fore)
+  background-color var(--color-link)
+  cursor pointer
+  font-size 90%
+  font-weight 700
+  -webkit-appearance none
 
   &:hover
-    background-color: var(--color-link-light)
+    background-color var(--color-link-light)
 
   &:active
-    background-color: var(--color-link-dark)
+    background-color var(--color-link-dark)
