@@ -1,13 +1,10 @@
-details
-  &:focus
-    outline none
-
-  & > :not(summary)
-    margin 1rem
-
-  & > *:last-child
-    margin-bottom 0
+details > *:not(summary)
+  padding 0.5rem 1rem
+  margin 0
 
 summary
+  background-color var(--color-back-line)
   cursor pointer
+  font-size 0.85rem
   font-weight bold
+  padding 0.25rem 0.5rem

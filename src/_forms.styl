@@ -1,39 +1,48 @@
-@require '_util'
-
 form
-  flex-col()
+  display flex
+  flex-direction column
   margin auto
   min-width 320px
 
   h1
-    noselect()
     text-align center
 
   label
-    noselect()
     font-size 75%
     margin-bottom 1rem
     min-width 320px
-    &:has(> [disabled])
+
+    &:has(> input:disabled)
       opacity 0.6
       user-select none
 
-    input[type=checkbox]
+    &:has(> input[type="checkbox"])
+      display flex
+      flex-direction row-reverse
+      justify-content flex-end
+
+    input[type="checkbox"]
       margin 0 0.25rem 0 0
 
     textarea,
-    input:not([type=checkbox])
+    input:not([type="checkbox"])
       color var(--color-fore)
       background-color var(--color-back-line)
       display block
       margin 0.25rem 0 0 0
       width 100%
 
-button,
+  footer
+    display flex
+    grid-gap var(--gap-small)
+    width 100%
+
+    & > *
+      flex-basis 100%
+
 input,
 textarea
-  border 0
-  border-radius var(--radii)
+  border none
   padding 0.5rem
   user-select text
 

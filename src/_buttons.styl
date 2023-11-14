@@ -1,20 +1,26 @@
-@require '_util'
-
 button,
 input[type=button],
 input[type=reset],
 input[type=submit]
-  noselect()
-  transit(background-color)
-  color var(--color-link-fore)
-  background-color var(--color-link)
+  border none
+  color var(--color-meta-fore)
+  background-color var(--color-meta)
+  transition background-color 0.25 ease
+
   cursor pointer
-  font-size 90%
+  font-size 0.75rem
   font-weight 700
+  letter-spacing -0.5px
+  padding 0.5rem 1rem
+  text-transform uppercase
   -webkit-appearance none
 
   &:hover
-    background-color var(--color-link-light)
+    background-color var(--color-meta-light)
 
   &:active
-    background-color var(--color-link-dark)
+    background-color var(--color-meta-dark)
+
+  &:disabled
+    color var(--color-fore-line)
+    background-color var(--color-back-line)

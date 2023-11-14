@@ -1,16 +1,16 @@
 {
   "name": "@onerbs/nushi",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A delightful, classless stylesheet",
   "author": "Alejandro Elí",
   "license": "MIT",
   "main": "dist/nushi.min.css",
   "scripts": {
     "build": "stylus src/nushi.styl -o dist/nushi.min.css -c",
-    "dev": "bun run build -w"
+    "dev": "npm run build -- -w"
   },
   "devDependencies": {
-    "stylus": "^0.60.0"
+    "stylus": "^0.61.0"
   },
   "homepage": "https://github.com/onerbs/nushi",
   "repository": {

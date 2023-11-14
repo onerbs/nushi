@@ -1,10 +1,14 @@
 :root
-  --gap 2rem
+  --gap-small   0.5rem
+  --gap         1.25rem
+  --gap-large   3rem
 
-  --radii 5pt
   --radii-small 2.5pt
+  --radii       4pt
+  --radii-large 5.5pt
 
   --color-fore       #1a1a1a
+  --color-fore-line  #353535
   --color-back       #efefef
   --color-back-line  #c9c9c9
 
@@ -18,14 +22,19 @@
   --color-meta-dark  #a56de2
   --color-meta-fore  var(--color-fore)
 
-  --color-done #A3CB38
-  --color-info #F79F1F
-  --color-warn #EE5A24
-  --color-fail #EA2027
+  --color-done #a3cb38
+  --color-info #f79f1f
+  --color-warn #ee5a24
+  --color-fail #ea2027
+
+  color var(--color-fore)
+  background-color var(--color-back)
+  accent-color var(--color-meta)
 
   @media (prefers-color-scheme dark)
-    --color-fore       #eee
-    --color-back       #000
+    --color-fore       #dedede
+    --color-fore-line  #e5e5e5
+    --color-back       #101010
     --color-back-line  #1a1a1a
 
     --color-link-light #8cd5ff

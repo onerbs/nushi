@@ -1,26 +1,26 @@
-@require '_util'
-
 nav
-  noselect()
-  middle()
+  display flex
+  align-items center
+  justify-content center
   flex-wrap wrap
-  gap 2rem
-  padding 1.5rem 0
+  grid-gap 2rem
+  padding 0
 
-  > *
-    margin 0
-    line-height 1
-
-  & > ul,
-  & > ol
+  ol,
+  ul
     display flex
     flex-wrap wrap
-    gap 1.5rem
-    padding 0
-
-    & > li
-      list-style none
-
-  @media (min-width 768px)
-    justify-content space-between
+    align-items center
+    justify-content center
+    grid-gap 1.5rem
+    margin 0
     padding 1.5rem 2rem
+
+    @media (min-width 768px)
+      justify-content space-between
+      padding 1rem
+
+  li
+    margin 0
+    line-height 1
+    list-style none
